@@ -1,14 +1,29 @@
 {
   "name": "stat-client",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "This is a client for interfacing with StatsStat",
+  "main": "src/server/index.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CraigR8806/StatsStatClient.git"
+  },
+  "author": "CraigR8806",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CraigR8806/StatsStatClient/issues"
+  },
+  "homepage": "https://github.com/CraigR8806/StatsStatClient#readme",
+ "private": true,
+"scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^15.0.0",
     "@angular/common": "^15.0.0",
