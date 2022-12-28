@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Dataset } from './dataset';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'StatClient';
+
+  selectedDataset?:Dataset;
+
+  selectDataset(dataset: Dataset){
+    this.selectedDataset = dataset;
+  }
 }

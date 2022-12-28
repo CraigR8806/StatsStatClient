@@ -1,0 +1,18 @@
+<hr/>
+<div align="center">
+    <div class="dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+            <span  *ngIf='selectedDataset; else selectedDataseNotSet'>
+                {{selectedDataset.name}}
+            </span>
+        </button>
+        <ul class="dropdown-menu">
+            <li *ngFor="let dataset of datasets">
+                <button type="button" (click)="onDatasetSelect(dataset)" class="btn">{{dataset.name}}</button>
+            </li>
+        </ul>
+      </div>
+</div>
+<ng-template #selectedDataseNotSet>
+    Available Datasets
+</ng-template>

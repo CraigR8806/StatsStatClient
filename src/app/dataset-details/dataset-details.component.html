@@ -1,0 +1,15 @@
+<div align="center" *ngIf="dataset">
+    <h2>{{dataset.name | uppercase}}</h2>
+    <div>
+        <div>
+            <label for="dataset-name">Dataset name: {{dataset.name}}</label>
+        </div>
+        <div>
+            <label for="dataset-last-updated">Last Updated: {{dataset.lastUpdated}}</label>
+        </div>
+        <div>
+            <label for="dataset-record-count">Record Count: {{dataset.recordCount}}</label>
+        </div>
+        
+    </div>
+</div>

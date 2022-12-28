@@ -4,7 +4,11 @@
   "description": "This is a client for interfacing with StatsStat",
   "main": "src/server/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
   },
   "repository": {
     "type": "git",
@@ -16,14 +20,7 @@
     "url": "https://github.com/CraigR8806/StatsStatClient/issues"
   },
   "homepage": "https://github.com/CraigR8806/StatsStatClient#readme",
- "private": true,
-"scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
-  },
+  "private": true,
   "dependencies": {
     "@angular/animations": "^15.0.0",
     "@angular/common": "^15.0.0",
@@ -33,6 +30,10 @@
     "@angular/platform-browser": "^15.0.0",
     "@angular/platform-browser-dynamic": "^15.0.0",
     "@angular/router": "^15.0.0",
+    "@ng-bootstrap/ng-bootstrap": "^14.0.0",
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.3",
+    "component": "^1.1.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"
