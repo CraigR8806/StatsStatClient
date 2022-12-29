@@ -1,6 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { DatasetService } from '../dataset.service';
-import { Dataset } from '../dataset';
+import { Dataset } from "../model/dataset";
+import { DatasetService } from '../services/dataset.service';
 
 @Component({
   selector: 'app-dataset-selector',

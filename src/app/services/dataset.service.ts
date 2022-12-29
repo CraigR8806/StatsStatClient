@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Dataset } from './dataset';
+import { Dataset } from '../model/dataset';
 
 @Injectable({
   providedIn: 'root'
@@ -8,12 +8,12 @@ export class DatasetService {
 
   datasets=[
     {
-      lastUpdated:new Date(),
+      lastUpdated:786414995,
       name:"mock dataset 1",
       recordCount:758342
     },
     {
-      lastUpdated:new Date(),
+      lastUpdated:1661721635,
       name:"mock dataset 2",
       recordCount:5567521
     },

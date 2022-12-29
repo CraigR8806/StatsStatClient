@@ -5,11 +5,13 @@
             <label for="dataset-name">Dataset name: {{dataset.name}}</label>
         </div>
         <div>
-            <label for="dataset-last-updated">Last Updated: {{dataset.lastUpdated}}</label>
+            <label *ngIf="dataset.lastUpdated" for="dataset-last-updated">Last Updated: {{dataset.lastUpdated * 1000 | date:'MMMM d y, h:mm:ss a'}}</label>
         </div>
         <div>
             <label for="dataset-record-count">Record Count: {{dataset.recordCount}}</label>
         </div>
-        
+        <div>
+            <label for="dataset-description">Description: {{dataset.description}}</label>
+        </div>
     </div>
 </div>

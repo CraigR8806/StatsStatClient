@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Dataset } from './dataset';
+import { Dataset } from "./model/dataset";
 
 @Component({
   selector: 'app-root',
