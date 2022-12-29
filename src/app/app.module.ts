@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -17,7 +18,7 @@ import { DatasetSelectorComponent } from './dataset-selector/dataset-selector.co
     BrowserModule,
     NgbModule,
     FormsModule,
-
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

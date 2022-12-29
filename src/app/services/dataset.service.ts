@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Dataset } from '../model/dataset';
 
 @Injectable({
@@ -6,23 +8,10 @@ import { Dataset } from '../model/dataset';
 })
 export class DatasetService {
 
-  datasets=[
-    {
-      lastUpdated:786414995,
-      name:"mock dataset 1",
-      recordCount:758342
-    },
-    {
-      lastUpdated:1661721635,
-      name:"mock dataset 2",
-      recordCount:5567521
-    },
-  ]
+  constructor(private http: HttpClient) { }
 
-  constructor() { }
-
-  getDatasets(): Dataset[] {
-    return this.datasets;
+  getDatasets(): Observable<Dataset[]> {
+    return this.http.get<Dataset[]>("http://localhost:8080/statsstat/catalog/datasets");
   }
 
 }

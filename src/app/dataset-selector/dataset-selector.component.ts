@@ -20,7 +20,7 @@ export class DatasetSelectorComponent implements OnInit {
   }
 
   getDatasets(): void {
-    this.datasets = this.datasetService.getDatasets();
+    this.datasetService.getDatasets().subscribe(datasets => this.datasets = datasets);
   }
 
   onDatasetSelect(dataset: Dataset): void {
